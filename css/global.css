@@ -49,4 +49,5 @@ img {
   line-height: 1;
   word-break: break-all;
   max-width: 5ch;
+  place-self: center;
 }
