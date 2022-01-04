@@ -1,0 +1,52 @@
+* {
+  font-family: "Fira Sans", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.grid {
+  max-width: 1200px;
+  padding: 120px 20px 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+
+  .formacao .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+
+  .formacao-extra h3::before {
+    display: none;
+  }
+}
+
+.subtitulo {
+  font-size: 7rem;
+  line-height: 1;
+  word-break: break-all;
+  max-width: 5ch;
+}

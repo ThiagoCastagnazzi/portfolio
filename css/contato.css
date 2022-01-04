@@ -1,0 +1,54 @@
+.contato-container {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.contato {
+  position: relative;
+}
+
+.contato,
+.contato-lista a {
+  background: black;
+  font-size: 2rem;
+  color: white;
+}
+
+.footer-texto {
+  font-size: 1.8rem;
+  max-width: 60ch;
+  line-height: 1.4;
+  color: #a3a3a3;
+}
+
+.contato-lista li {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contato-lista li a:hover {
+  color: violet;
+}
+
+.footer-direitos {
+  font-size: 1.5rem;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 1200px) {
+  .footer-texto {
+    font-size: 1.5rem;
+  }
+
+  .contato,
+  .contato-lista a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .contato-container {
+    grid-template-columns: 1fr;
+  }
+}

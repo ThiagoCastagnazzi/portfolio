@@ -1,0 +1,138 @@
+.formacao {
+  background: #141414;
+  color: white;
+}
+
+.formacao .subtitulo {
+  color: black;
+}
+
+.formacao .formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: #a3a3a3;
+}
+
+.formacao-texto strong {
+  color: white;
+}
+
+.faculdade-lista {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.faculdade {
+  flex: 1;
+  background: black;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-tipo {
+  font-size: 0.9rem;
+  color: #a3a3a3;
+  margin-bottom: 15px;
+}
+
+.faculdade-curso {
+  font-size: 1.125rem;
+  line-height: 1.4rem;
+  position: relative;
+  flex: 1;
+}
+
+.faculdade-curso::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -24px;
+}
+
+.faculdade-instituicao {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+  margin-top: 10px;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.formacao-extra h3 {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #a3a3a3;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.formacao-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -4px;
+  left: -28px;
+}
+
+.cursos h3::before {
+  background: url(/img/cursos.svg) no-repeat;
+}
+
+.idiomas h3:before {
+  background: url(/img/idiomas.svg) no-repeat;
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span {
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formacao-container {
+  position: relative;
+}
+
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(/img/detalhe.svg) no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+
+  .formacao-container::after {
+    display: none;
+  }
+}
