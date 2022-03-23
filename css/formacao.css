@@ -50,7 +50,7 @@
 }
 
 .faculdade-curso::before {
-  content: "";
+  content: '';
   display: block;
   width: 4px;
   height: 20px;
@@ -67,20 +67,23 @@
 
 .cursos {
   margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .formacao-extra h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.4;
   color: #a3a3a3;
   margin-bottom: 20px;
   text-transform: uppercase;
-  position: relative;
+  grid-column: 1 / -1;
 }
 
 .formacao-extra h3::before {
   display: block;
-  content: "";
+  content: '';
   width: 24px;
   height: 24px;
   position: absolute;
@@ -116,7 +119,7 @@
 }
 
 .formacao-container::after {
-  content: "";
+  content: '';
   display: block;
   width: 130px;
   height: 100px;
