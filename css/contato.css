@@ -47,6 +47,17 @@
   grid-column: 1 / -1;
 }
 
+.contato-container::before {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../img/detalhe.svg) no-repeat center;
+  position: absolute;
+  top: -40px;
+  left: 20px;
+}
+
 @media (max-width: 1200px) {
   .footer-texto {
     font-size: 1.5rem;
@@ -61,5 +72,9 @@
 @media (max-width: 800px) {
   .contato-container {
     grid-template-columns: 1fr;
+  }
+
+  .contato-container::before {
+    display: none;
   }
 }
